@@ -11,7 +11,9 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    var count: Int = 0
 
+    @IBOutlet var myLabel: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -21,6 +23,7 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        self.updateMyLabelWithCount()
     }
     
     override func didDeactivate() {
@@ -28,4 +31,29 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func upButton() {
+        self.addOneToCount()
+        self.updateMyLabelWithCount()
+    }
+    
+    @IBAction func downButton() {
+        self.subOneFromCount()
+        self.updateMyLabelWithCount()
+    }
+    
+    func getCountAsString() -> String {
+        return "\(self.count)"
+    }
+    
+    func updateMyLabelWithCount() {
+        self.myLabel.setText(self.getCountAsString())
+    }
+    
+    func addOneToCount() {
+        self.count = self.count + 1
+    }
+    
+    func subOneFromCount() {
+        self.count = self.count - 1
+    }
 }

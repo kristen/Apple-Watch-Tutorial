@@ -1,14 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Apple_Watch_Tutorial_Watch_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Hello" id="Smv-a4-zWs"/>
+                        <button width="1" alignment="left" title="Up" id="oLW-xG-NWc">
+                            <connections>
+                                <action selector="upButton" destination="AgC-eL-Hgc" id="Si8-qH-Xze"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Down" id="eiW-1T-8Ol">
+                            <connections>
+                                <action selector="downButton" destination="AgC-eL-Hgc" id="JW7-qZ-Aji"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="Smv-a4-zWs" id="XwU-fm-mst"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
