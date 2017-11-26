@@ -14,6 +14,13 @@
 		7BC333B21FCB607200778362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC333B01FCB607200778362 /* LaunchScreen.storyboard */; };
 		7BC333BD1FCB607200778362 /* Apple_Watch_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC333BC1FCB607200778362 /* Apple_Watch_TutorialTests.swift */; };
 		7BC333C81FCB607200778362 /* Apple_Watch_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC333C71FCB607200778362 /* Apple_Watch_TutorialUITests.swift */; };
+		7BC333DB1FCB60D300778362 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC333D91FCB60D300778362 /* Interface.storyboard */; };
+		7BC333DD1FCB60D300778362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC333DC1FCB60D300778362 /* Assets.xcassets */; };
+		7BC333E41FCB60D400778362 /* Apple Watch Tutorial Watch App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7BC333E31FCB60D300778362 /* Apple Watch Tutorial Watch App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7BC333E91FCB60D400778362 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC333E81FCB60D400778362 /* InterfaceController.swift */; };
+		7BC333EB1FCB60D400778362 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC333EA1FCB60D400778362 /* ExtensionDelegate.swift */; };
+		7BC333ED1FCB60D400778362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC333EC1FCB60D400778362 /* Assets.xcassets */; };
+		7BC333F11FCB60D400778362 /* Apple Watch Tutorial Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7BC333D71FCB60D300778362 /* Apple Watch Tutorial Watch App.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,46 @@
 			remoteGlobalIDString = 7BC333A31FCB607200778362;
 			remoteInfo = "Apple Watch Tutorial";
 		};
+		7BC333E51FCB60D400778362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC3339C1FCB607200778362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC333E21FCB60D300778362;
+			remoteInfo = "Apple Watch Tutorial Watch App Extension";
+		};
+		7BC333EF1FCB60D400778362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BC3339C1FCB607200778362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BC333D61FCB60D300778362;
+			remoteInfo = "Apple Watch Tutorial Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BC333F51FCB60D400778362 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BC333E41FCB60D400778362 /* Apple Watch Tutorial Watch App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC333F91FCB60D400778362 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7BC333F11FCB60D400778362 /* Apple Watch Tutorial Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7BC333A41FCB607200778362 /* Apple Watch Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Watch Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +93,15 @@
 		7BC333C31FCB607200778362 /* Apple Watch TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Watch TutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC333C71FCB607200778362 /* Apple_Watch_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Watch_TutorialUITests.swift; sourceTree = "<group>"; };
 		7BC333C91FCB607200778362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC333D71FCB60D300778362 /* Apple Watch Tutorial Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Watch Tutorial Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC333DA1FCB60D300778362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7BC333DC1FCB60D300778362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BC333DE1FCB60D300778362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC333E31FCB60D300778362 /* Apple Watch Tutorial Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Apple Watch Tutorial Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC333E81FCB60D400778362 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7BC333EA1FCB60D400778362 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7BC333EC1FCB60D400778362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BC333EE1FCB60D400778362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +126,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BC333E01FCB60D300778362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +142,8 @@
 				7BC333A61FCB607200778362 /* Apple Watch Tutorial */,
 				7BC333BB1FCB607200778362 /* Apple Watch TutorialTests */,
 				7BC333C61FCB607200778362 /* Apple Watch TutorialUITests */,
+				7BC333D81FCB60D300778362 /* Apple Watch Tutorial Watch App */,
+				7BC333E71FCB60D400778362 /* Apple Watch Tutorial Watch App Extension */,
 				7BC333A51FCB607200778362 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +154,8 @@
 				7BC333A41FCB607200778362 /* Apple Watch Tutorial.app */,
 				7BC333B81FCB607200778362 /* Apple Watch TutorialTests.xctest */,
 				7BC333C31FCB607200778362 /* Apple Watch TutorialUITests.xctest */,
+				7BC333D71FCB60D300778362 /* Apple Watch Tutorial Watch App.app */,
+				7BC333E31FCB60D300778362 /* Apple Watch Tutorial Watch App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +191,27 @@
 			path = "Apple Watch TutorialUITests";
 			sourceTree = "<group>";
 		};
+		7BC333D81FCB60D300778362 /* Apple Watch Tutorial Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				7BC333D91FCB60D300778362 /* Interface.storyboard */,
+				7BC333DC1FCB60D300778362 /* Assets.xcassets */,
+				7BC333DE1FCB60D300778362 /* Info.plist */,
+			);
+			path = "Apple Watch Tutorial Watch App";
+			sourceTree = "<group>";
+		};
+		7BC333E71FCB60D400778362 /* Apple Watch Tutorial Watch App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7BC333E81FCB60D400778362 /* InterfaceController.swift */,
+				7BC333EA1FCB60D400778362 /* ExtensionDelegate.swift */,
+				7BC333EC1FCB60D400778362 /* Assets.xcassets */,
+				7BC333EE1FCB60D400778362 /* Info.plist */,
+			);
+			path = "Apple Watch Tutorial Watch App Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +222,12 @@
 				7BC333A01FCB607200778362 /* Sources */,
 				7BC333A11FCB607200778362 /* Frameworks */,
 				7BC333A21FCB607200778362 /* Resources */,
+				7BC333F91FCB60D400778362 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7BC333F01FCB60D400778362 /* PBXTargetDependency */,
 			);
 			name = "Apple Watch Tutorial";
 			productName = "Apple Watch Tutorial";
@@ -181,6 +270,40 @@
 			productReference = 7BC333C31FCB607200778362 /* Apple Watch TutorialUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7BC333D61FCB60D300778362 /* Apple Watch Tutorial Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC333F61FCB60D400778362 /* Build configuration list for PBXNativeTarget "Apple Watch Tutorial Watch App" */;
+			buildPhases = (
+				7BC333D51FCB60D300778362 /* Resources */,
+				7BC333F51FCB60D400778362 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BC333E61FCB60D400778362 /* PBXTargetDependency */,
+			);
+			name = "Apple Watch Tutorial Watch App";
+			productName = "Apple Watch Tutorial Watch App";
+			productReference = 7BC333D71FCB60D300778362 /* Apple Watch Tutorial Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7BC333E21FCB60D300778362 /* Apple Watch Tutorial Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BC333F21FCB60D400778362 /* Build configuration list for PBXNativeTarget "Apple Watch Tutorial Watch App Extension" */;
+			buildPhases = (
+				7BC333DF1FCB60D300778362 /* Sources */,
+				7BC333E01FCB60D300778362 /* Frameworks */,
+				7BC333E11FCB60D300778362 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Apple Watch Tutorial Watch App Extension";
+			productName = "Apple Watch Tutorial Watch App Extension";
+			productReference = 7BC333E31FCB60D300778362 /* Apple Watch Tutorial Watch App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +328,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7BC333A31FCB607200778362;
 					};
+					7BC333D61FCB60D300778362 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					7BC333E21FCB60D300778362 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 7BC3339F1FCB607200778362 /* Build configuration list for PBXProject "Apple Watch Tutorial" */;
@@ -223,6 +354,8 @@
 				7BC333A31FCB607200778362 /* Apple Watch Tutorial */,
 				7BC333B71FCB607200778362 /* Apple Watch TutorialTests */,
 				7BC333C21FCB607200778362 /* Apple Watch TutorialUITests */,
+				7BC333D61FCB60D300778362 /* Apple Watch Tutorial Watch App */,
+				7BC333E21FCB60D300778362 /* Apple Watch Tutorial Watch App Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +382,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC333D51FCB60D300778362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC333DD1FCB60D300778362 /* Assets.xcassets in Resources */,
+				7BC333DB1FCB60D300778362 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BC333E11FCB60D300778362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC333ED1FCB60D400778362 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +430,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BC333DF1FCB60D300778362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC333EB1FCB60D400778362 /* ExtensionDelegate.swift in Sources */,
+				7BC333E91FCB60D400778362 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +451,16 @@
 			isa = PBXTargetDependency;
 			target = 7BC333A31FCB607200778362 /* Apple Watch Tutorial */;
 			targetProxy = 7BC333C41FCB607200778362 /* PBXContainerItemProxy */;
+		};
+		7BC333E61FCB60D400778362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC333E21FCB60D300778362 /* Apple Watch Tutorial Watch App Extension */;
+			targetProxy = 7BC333E51FCB60D400778362 /* PBXContainerItemProxy */;
+		};
+		7BC333F01FCB60D400778362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BC333D61FCB60D300778362 /* Apple Watch Tutorial Watch App */;
+			targetProxy = 7BC333EF1FCB60D400778362 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,6 +479,14 @@
 				7BC333B11FCB607200778362 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7BC333D91FCB60D300778362 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BC333DA1FCB60D300778362 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -512,6 +689,76 @@
 			};
 			name = Release;
 		};
+		7BC333F31FCB60D400778362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Apple Watch Tutorial Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kssundquist.Apple-Watch-Tutorial.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		7BC333F41FCB60D400778362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Apple Watch Tutorial Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kssundquist.Apple-Watch-Tutorial.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
+		7BC333F71FCB60D400778362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Apple_Watch_Tutorial_Watch_App_Extension;
+				INFOPLIST_FILE = "Apple Watch Tutorial Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kssundquist.Apple-Watch-Tutorial.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Debug;
+		};
+		7BC333F81FCB60D400778362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Apple_Watch_Tutorial_Watch_App_Extension;
+				INFOPLIST_FILE = "Apple Watch Tutorial Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kssundquist.Apple-Watch-Tutorial.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +794,24 @@
 			buildConfigurations = (
 				7BC333D31FCB607200778362 /* Debug */,
 				7BC333D41FCB607200778362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC333F21FCB60D400778362 /* Build configuration list for PBXNativeTarget "Apple Watch Tutorial Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC333F31FCB60D400778362 /* Debug */,
+				7BC333F41FCB60D400778362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BC333F61FCB60D400778362 /* Build configuration list for PBXNativeTarget "Apple Watch Tutorial Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BC333F71FCB60D400778362 /* Debug */,
+				7BC333F81FCB60D400778362 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
